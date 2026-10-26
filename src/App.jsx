@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Login from './components/Auth/Login'
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './components/Dashboard/AdminDashboard'
+import { setLocalStorage } from './utils/localStorage'
+import { getLocalStorage } from './utils/localStorage'
+import { useEffect } from 'react'
+
 
 const App = () => {
+
+  const [user, setUser] = useState(null)
+
+  consthandleLogin = () =
+
+  // useEffect(() => {
+  //   // setLocalStorage()
+  //   getLocalStorage()
+  // },)
+  
   return (
     <>
-    <Login />
+    {!user ? <Login />: ''}
     {/* <EmployeeDashboard /> */}
     {/* <AdminDashboard /> */}
     </>
