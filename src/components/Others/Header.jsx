@@ -9,19 +9,17 @@ const Header = ({ changeUser, data, variant = 'dark' }) => {
   }
 
   return (
-    <header className={`flex items-center justify-between border-b pb-6 ${isLight ? 'border-slate-200' : 'border-slate-800'}`}>
+    <header className={`flex items-center justify-between rounded-2xl border bg-[#131D1D] px-4 py-4 sm:px-5 ${isLight ? 'border-[#2A3433]' : 'border-[#2A3433]'}`}>
       <div>
-        <p className={`text-sm font-medium ${isLight ? 'text-slate-500' : 'text-slate-400'}`}>Hello,</p>
-        <h1 className={`mt-1 text-xl font-semibold tracking-tight sm:text-2xl ${isLight ? 'text-slate-900' : 'text-white'}`}>
+        <p className='text-xs font-medium uppercase tracking-[0.16em] text-[#A7B0AD]'>Hello,</p>
+        <h1 className='mt-1 text-xl font-semibold tracking-tight text-[#F5F5F5] sm:text-2xl'>
           {data ? data.name : 'Admin'}
         </h1>
       </div>
-      <button onClick={logOutUser}
+      <button
+        onClick={logOutUser}
         type='button'
-        className={`rounded-lg border px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 ${isLight
-          ? 'border-slate-300 text-slate-600 hover:border-slate-400 hover:bg-white hover:text-slate-900 focus:ring-indigo-500'
-          : 'border-slate-700 text-slate-300 hover:border-slate-500 hover:bg-slate-800 hover:text-white focus:ring-cyan-400'
-        }`}
+        className='min-h-11 rounded-xl border border-[#2A3433] bg-[#101717] px-4 py-2.5 text-sm font-medium text-[#CBD1CE] transition hover:border-[#FF6700] hover:text-[#FF8533] focus:outline-none focus:ring-2 focus:ring-[#FF6700]/35'
       >
         Log out
       </button>

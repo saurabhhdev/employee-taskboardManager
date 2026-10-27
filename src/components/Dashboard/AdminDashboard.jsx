@@ -5,14 +5,12 @@ import AllTasks from '../Others/AllTasks'
 
 const AdminDashboard = (props) => {
   return (
-    <div className='min-h-screen w-full bg-slate-50 px-5 py-7 text-slate-900 sm:px-8 sm:py-10'>
-      <div className='mx-auto max-w-6xl'>
+    <div className='min-h-screen w-full bg-[#070D0D] px-4 py-5 text-[#F5F5F5] sm:px-8 sm:py-8'>
+      <div className='mx-auto max-w-6xl space-y-6 sm:space-y-8'>
         <Header changeUser={props.changeUser} variant='light' />
 
         <CreateTask />
         <AllTasks />
-
-
       </div>
     </div>
   )

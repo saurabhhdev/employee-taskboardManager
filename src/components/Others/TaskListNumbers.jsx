@@ -1,29 +1,28 @@
 import React from 'react'
 
-const TaskListNumbers = ({data}) => {
+const TaskListNumbers = ({ data }) => {
   return (
-    <section aria-label='Task summary' className='mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-4 sm:gap-4'>
-      <div className='rounded-xl border border-sky-100 border-t-2 border-t-sky-500 bg-sky-50/70 p-4 shadow-sm sm:p-5'>
-        <p className='text-2xl font-semibold tracking-tight text-sky-700'>{data.taskNumbers.newTask}</p>
-        <h2 className='mt-1 text-sm font-medium text-sky-900/70'>New tasks</h2>
+    <section aria-label='Task summary' className='grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4'>
+      <div className='rounded-2xl border border-[#2A3433] border-t-2 border-t-[#FF6700] bg-[#131D1D] p-4 sm:p-5'>
+        <p className='text-2xl font-semibold tracking-tight text-[#FF8533]'>{data.taskNumbers.newTask}</p>
+        <h2 className='mt-1 text-sm font-medium text-[#A7B0AD]'>New tasks</h2>
       </div>
 
-      <div className='rounded-xl border border-amber-100 border-t-2 border-t-amber-500 bg-amber-50/70 p-4 shadow-sm sm:p-5'>
-        <p className='text-2xl font-semibold tracking-tight text-amber-700'>{data.taskNumbers.active}</p>
-        <h2 className='mt-1 text-sm font-medium text-amber-900/70'>In progress</h2>
+      <div className='rounded-2xl border border-[#2A3433] bg-[#131D1D] p-4 sm:p-5'>
+        <p className='text-2xl font-semibold tracking-tight text-[#F5F5F5]'>{data.taskNumbers.active}</p>
+        <h2 className='mt-1 text-sm font-medium text-[#A7B0AD]'>In progress</h2>
       </div>
 
-      <div className='rounded-xl border border-emerald-100 border-t-2 border-t-emerald-500 bg-emerald-50/70 p-4 shadow-sm sm:p-5'>
-        <p className='text-2xl font-semibold tracking-tight text-emerald-700'>{data.taskNumbers.completed}</p>
-        <h2 className='mt-1 text-sm font-medium text-emerald-900/70'>Completed</h2>
+      <div className='rounded-2xl border border-[#2A3433] bg-[#131D1D] p-4 sm:p-5'>
+        <p className='text-2xl font-semibold tracking-tight text-[#A7D6A0]'>{data.taskNumbers.completed}</p>
+        <h2 className='mt-1 text-sm font-medium text-[#A7B0AD]'>Completed</h2>
       </div>
 
-      <div className='rounded-xl border border-rose-100 border-t-2 border-t-rose-500 bg-rose-50/70 p-4 shadow-sm sm:p-5'>
-        <p className='text-2xl font-semibold tracking-tight text-rose-700'>{data.taskNumbers.failed}</p>
-        <h2 className='mt-1 text-sm font-medium text-rose-900/70'>Failed</h2>
+      <div className='rounded-2xl border border-[#2A3433] bg-[#131D1D] p-4 sm:p-5'>
+        <p className='text-2xl font-semibold tracking-tight text-[#F0A08C]'>{data.taskNumbers.failed}</p>
+        <h2 className='mt-1 text-sm font-medium text-[#A7B0AD]'>Failed</h2>
       </div>
     </section>
-
   )
 }
 
